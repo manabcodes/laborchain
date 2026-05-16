@@ -1,0 +1,457 @@
+@prefix : <urn:webprotege:ontology:67b1e8f0-2aee-431f-bbd4-8d343a4dc1b1#> .
+@prefix lc: <https://manabcodes.github.io/laborchain#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:webprotege:ontology:67b1e8f0-2aee-431f-bbd4-8d343a4dc1b1> .
+
+<https://manabcodes.github.io/laborchain> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://manabcodes.github.io/laborchain#contractedBy
+lc:contractedBy rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain lc:Subcontractor ;
+                rdfs:range lc:Contractor ,
+                           lc:Subcontractor ;
+                rdfs:label "lc:contractedBy"^^xsd:string .
+
+
+###  https://manabcodes.github.io/laborchain#employedBy
+lc:employedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain lc:LaborUnit ;
+              rdfs:range lc:Subcontractor ;
+              rdfs:label "lc:employedBy" .
+
+
+###  https://manabcodes.github.io/laborchain#hasExploitationRecord
+lc:hasExploitationRecord rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain lc:LaborUnit ;
+                         rdfs:range lc:ExploitationRecord ;
+                         rdfs:label "lc:hasExploitationRecord" .
+
+
+###  https://manabcodes.github.io/laborchain#inheritsFrom
+lc:inheritsFrom rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain lc:AIModel ;
+                rdfs:range lc:AIModel ;
+                rdfs:label "lc:inheritsFrom" .
+
+
+###  https://manabcodes.github.io/laborchain#labeledBy
+lc:labeledBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain lc:TrainingDataset ;
+             rdfs:range lc:LaborUnit ;
+             rdfs:label "lc:labeledBy" .
+
+
+###  https://manabcodes.github.io/laborchain#operatesIn
+lc:operatesIn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain lc:LaborUnit ;
+              rdfs:range lc:Jurisdiction ;
+              rdfs:label "lc:operatesIn" .
+
+
+###  https://manabcodes.github.io/laborchain#performsTask
+lc:performsTask rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain lc:LaborUnit ;
+                rdfs:range lc:LaborTask ;
+                rdfs:label "lc:performsTask" .
+
+
+###  https://manabcodes.github.io/laborchain#propagatesTo
+lc:propagatesTo rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain lc:ExploitationRecord ;
+                rdfs:range lc:AIModel ;
+                rdfs:label "lc:propagatesTo" .
+
+
+###  https://manabcodes.github.io/laborchain#trainedOn
+lc:trainedOn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain lc:AIModel ;
+             rdfs:range lc:TrainingDataset ;
+             rdfs:label "lc:trainedOn"^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://manabcodes.github.io/laborchain#consentVitiatedByCoercion
+lc:consentVitiatedByCoercion rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty ;
+                             rdfs:domain lc:ExploitationRecord ;
+                             rdfs:range xsd:boolean ;
+                             rdfs:label "lc:consentVitiatedByCoercion" .
+
+
+###  https://manabcodes.github.io/laborchain#coreCountryWageUSD
+lc:coreCountryWageUSD rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain lc:ExploitationRecord ;
+                      rdfs:range xsd:float ;
+                      rdfs:label "lc:coreCountryWageUSD" .
+
+
+###  https://manabcodes.github.io/laborchain#dataSourced
+lc:dataSourced rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain lc:ExploitationRecord ;
+               rdfs:range xsd:string ;
+               rdfs:label "lc:dataSourced" .
+
+
+###  https://manabcodes.github.io/laborchain#exploitationInherited
+lc:exploitationInherited rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain lc:ModelLineage ;
+                         rdfs:range xsd:boolean ;
+                         rdfs:label "lc:exploitationInherited" .
+
+
+###  https://manabcodes.github.io/laborchain#inheritanceDepth
+lc:inheritanceDepth rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain lc:ModelLineage ;
+                    rdfs:range xsd:integer ;
+                    rdfs:label "lc:inheritanceDepth" .
+
+
+###  https://manabcodes.github.io/laborchain#inheritanceType
+lc:inheritanceType rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain lc:ModelLineage ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "lc:inheritanceType" .
+
+
+###  https://manabcodes.github.io/laborchain#jurisdictionArbitrageFlag
+lc:jurisdictionArbitrageFlag rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty ;
+                             rdfs:domain lc:ExploitationRecord ;
+                             rdfs:range xsd:boolean ;
+                             rdfs:label "lc:jurisdictionArbitrageFlag" .
+
+
+###  https://manabcodes.github.io/laborchain#psychologicalHarmDocumented
+lc:psychologicalHarmDocumented rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf owl:topDataProperty ;
+                               rdfs:domain lc:ExploitationRecord ;
+                               rdfs:range xsd:boolean ;
+                               rdfs:label "lc:psychologicalHarmDocumented" .
+
+
+###  https://manabcodes.github.io/laborchain#psychologicalSupportProvided
+lc:psychologicalSupportProvided rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf owl:topDataProperty ;
+                                rdfs:domain lc:ExploitationRecord ;
+                                rdfs:range xsd:boolean ;
+                                rdfs:label "lc:psychologicalSupportProvided" .
+
+
+###  https://manabcodes.github.io/laborchain#subcontractingDepth
+lc:subcontractingDepth rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain lc:ExploitationRecord ;
+                       rdfs:range xsd:integer ;
+                       rdfs:label "lc:subcontractingDepth" .
+
+
+###  https://manabcodes.github.io/laborchain#traumaticContentProcessed
+lc:traumaticContentProcessed rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty ;
+                             rdfs:domain lc:ExploitationRecord ;
+                             rdfs:range xsd:boolean ;
+                             rdfs:label "lc:traumaticContentProcessed" .
+
+
+###  https://manabcodes.github.io/laborchain#unionizationSuppressed
+lc:unionizationSuppressed rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain lc:ExploitationRecord ;
+                          rdfs:range xsd:boolean ;
+                          rdfs:label "lc:unionizationSuppressed" .
+
+
+###  https://manabcodes.github.io/laborchain#wageRatio
+lc:wageRatio rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain lc:ExploitationRecord ;
+             rdfs:range xsd:float ;
+             rdfs:label "lc:wageRatio" .
+
+
+###  https://manabcodes.github.io/laborchain#wageUSD
+lc:wageUSD rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain lc:ExploitationRecord ;
+           rdfs:range xsd:float ;
+           rdfs:label "lc:wageUSD" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://manabcodes.github.io/laborchain#AIModel
+lc:AIModel rdf:type owl:Class ;
+           rdfs:label "lc:AIModel" .
+
+
+###  https://manabcodes.github.io/laborchain#AccountabilityFragmentation
+lc:AccountabilityFragmentation rdf:type owl:Class ;
+                               rdfs:subClassOf lc:ExploitationRecord ;
+                               rdfs:label "lc:AccountabilityFragmentation" .
+
+
+###  https://manabcodes.github.io/laborchain#ConsentVitiation
+lc:ConsentVitiation rdf:type owl:Class ;
+                    rdfs:subClassOf lc:ExploitationRecord ;
+                    rdfs:label "lc:ConsentVitiation" .
+
+
+###  https://manabcodes.github.io/laborchain#ContentModeration
+lc:ContentModeration rdf:type owl:Class ;
+                     rdfs:subClassOf lc:LaborTask ;
+                     rdfs:label "lc:ContentModeration" .
+
+
+###  https://manabcodes.github.io/laborchain#Contractor
+lc:Contractor rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ;
+              rdfs:label "lc:Contractor" .
+
+
+###  https://manabcodes.github.io/laborchain#DataLabeling
+lc:DataLabeling rdf:type owl:Class ;
+                rdfs:subClassOf lc:LaborTask ;
+                rdfs:label "lc:DataLabeling" .
+
+
+###  https://manabcodes.github.io/laborchain#EvaluationTask
+lc:EvaluationTask rdf:type owl:Class ;
+                  rdfs:subClassOf lc:LaborTask ;
+                  rdfs:label "lc:EvaluationTask" .
+
+
+###  https://manabcodes.github.io/laborchain#ExploitationRecord
+lc:ExploitationRecord rdf:type owl:Class ;
+                      rdfs:label "lc:ExploitationRecord" .
+
+
+###  https://manabcodes.github.io/laborchain#Jurisdiction
+lc:Jurisdiction rdf:type owl:Class ;
+                rdfs:label "lc:Jurisdiction" .
+
+
+###  https://manabcodes.github.io/laborchain#JurisdictionalArbitrage
+lc:JurisdictionalArbitrage rdf:type owl:Class ;
+                           rdfs:subClassOf lc:ExploitationRecord ;
+                           rdfs:label "lc:JurisdictionalArbitrage" .
+
+
+###  https://manabcodes.github.io/laborchain#LaborRightsSuppression
+lc:LaborRightsSuppression rdf:type owl:Class ;
+                          rdfs:subClassOf lc:ExploitationRecord ;
+                          rdfs:label "lc:LaborRightsSuppression" .
+
+
+###  https://manabcodes.github.io/laborchain#LaborTask
+lc:LaborTask rdf:type owl:Class ;
+             rdfs:label "lc:LaborTask" .
+
+
+###  https://manabcodes.github.io/laborchain#LaborUnit
+lc:LaborUnit rdf:type owl:Class ;
+             rdfs:label "lc:LaborUnit" .
+
+
+###  https://manabcodes.github.io/laborchain#LocalizationTask
+lc:LocalizationTask rdf:type owl:Class ;
+                    rdfs:subClassOf lc:LaborTask ;
+                    rdfs:label "lc:LocalizationTask" .
+
+
+###  https://manabcodes.github.io/laborchain#ModelLineage
+lc:ModelLineage rdf:type owl:Class ;
+                rdfs:label "lc:ModelLineage" .
+
+
+###  https://manabcodes.github.io/laborchain#PsychologicalExploitation
+lc:PsychologicalExploitation rdf:type owl:Class ;
+                             rdfs:subClassOf lc:ExploitationRecord ;
+                             rdfs:label "lc:PsychologicalExploitation" .
+
+
+###  https://manabcodes.github.io/laborchain#RLHFAnnotation
+lc:RLHFAnnotation rdf:type owl:Class ;
+                  rdfs:subClassOf lc:LaborTask ;
+                  rdfs:label "lc:RLHFAnnotation" .
+
+
+###  https://manabcodes.github.io/laborchain#Subcontractor
+lc:Subcontractor rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing ;
+                 rdfs:label "lc:Subcontractor" .
+
+
+###  https://manabcodes.github.io/laborchain#TrainingDataset
+lc:TrainingDataset rdf:type owl:Class ;
+                   rdfs:label "lc:TrainingDataset" .
+
+
+###  https://manabcodes.github.io/laborchain#TranscriptionTask
+lc:TranscriptionTask rdf:type owl:Class ;
+                     rdfs:subClassOf lc:LaborTask ;
+                     rdfs:label "lc:TranscriptionTask" .
+
+
+###  https://manabcodes.github.io/laborchain#WageExploitation
+lc:WageExploitation rdf:type owl:Class ;
+                    rdfs:subClassOf lc:ExploitationRecord ;
+                    rdfs:label "lc:WageExploitation" .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  Jurisdictions
+lc:Kenya rdf:type owl:NamedIndividual , lc:Jurisdiction ;
+         rdfs:label "Kenya" .
+
+lc:UnitedStates rdf:type owl:NamedIndividual , lc:Jurisdiction ;
+                rdfs:label "United States" .
+
+###  Contractor
+lc:OpenAI rdf:type owl:NamedIndividual , lc:Contractor ;
+          rdfs:label "OpenAI" .
+
+###  Subcontractor
+lc:Sama rdf:type owl:NamedIndividual , lc:Subcontractor ;
+        rdfs:label "Sama" .
+
+###  LaborTask
+lc:ChatGPT_ContentModeration rdf:type owl:NamedIndividual , lc:ContentModeration ;
+                             rdfs:label "ChatGPT Content Moderation" .
+
+lc:ChatGPT_RLHFAnnotation rdf:type owl:NamedIndividual , lc:RLHFAnnotation ;
+                          rdfs:label "ChatGPT RLHF Annotation" .
+
+###  LaborUnit
+lc:SamaKenyaWorkers rdf:type owl:NamedIndividual , lc:LaborUnit ;
+                    rdfs:label "Sama Kenya Workers" ;
+                    lc:employedBy lc:Sama ;
+                    lc:operatesIn lc:Kenya ;
+                    lc:performsTask lc:ChatGPT_ContentModeration ;
+                    lc:performsTask lc:ChatGPT_RLHFAnnotation .
+
+###  ExploitationRecord
+lc:SamaExploitationRecord rdf:type owl:NamedIndividual , 
+                                   lc:WageExploitation ,
+                                   lc:PsychologicalExploitation ,
+                                   lc:JurisdictionalArbitrage ,
+                                   lc:LaborRightsSuppression ,
+                                   lc:ConsentVitiation ,
+                                   lc:AccountabilityFragmentation ;
+          rdfs:label "Sama Kenya Exploitation Record" ;
+          lc:wageUSD "1.32"^^xsd:float ;
+          lc:coreCountryWageUSD "15.00"^^xsd:float ;
+          lc:wageRatio "0.09"^^xsd:float ;
+          lc:traumaticContentProcessed "true"^^xsd:boolean ;
+          lc:psychologicalHarmDocumented "true"^^xsd:boolean ;
+          lc:unionizationSuppressed "true"^^xsd:boolean ;
+          lc:psychologicalSupportProvided "false"^^xsd:boolean ;
+          lc:consentVitiatedByCoercion "true"^^xsd:boolean ;
+          lc:subcontractingDepth "1"^^xsd:integer ;
+          lc:jurisdictionArbitrageFlag "true"^^xsd:boolean ;
+          lc:dataSourced "Perrigo, B. TIME Magazine, January 2023; worker testimony" .
+
+###  Link LaborUnit to ExploitationRecord
+lc:SamaKenyaWorkers lc:hasExploitationRecord lc:SamaExploitationRecord .
+
+###  Subcontractor contracted by Contractor
+lc:Sama lc:contractedBy lc:OpenAI .
+
+###  Training Datasets
+lc:WebText rdf:type owl:NamedIndividual , lc:TrainingDataset ;
+           rdfs:label "WebText" .
+
+lc:C4 rdf:type owl:NamedIndividual , lc:TrainingDataset ;
+      rdfs:label "C4" .
+
+lc:InstructGPT_RLHF rdf:type owl:NamedIndividual , lc:TrainingDataset ;
+                    rdfs:label "InstructGPT RLHF Dataset" .
+
+###  Datasets labeled by Sama workers
+lc:InstructGPT_RLHF lc:labeledBy lc:SamaKenyaWorkers .
+
+###  AI Models
+lc:GPT3 rdf:type owl:NamedIndividual , lc:AIModel ;
+        rdfs:label "GPT-3" ;
+        lc:trainedOn lc:WebText ;
+        lc:trainedOn lc:C4 .
+
+lc:GPT35 rdf:type owl:NamedIndividual , lc:AIModel ;
+         rdfs:label "GPT-3.5" ;
+         lc:inheritsFrom lc:GPT3 ;
+         lc:trainedOn lc:InstructGPT_RLHF .
+
+lc:ChatGPT rdf:type owl:NamedIndividual , lc:AIModel ;
+           rdfs:label "ChatGPT" ;
+           lc:inheritsFrom lc:GPT35 .
+
+lc:GPT4 rdf:type owl:NamedIndividual , lc:AIModel ;
+        rdfs:label "GPT-4" ;
+        lc:inheritsFrom lc:GPT35 .
+
+lc:GPT4o rdf:type owl:NamedIndividual , lc:AIModel ;
+         rdfs:label "GPT-4o" ;
+         lc:inheritsFrom lc:GPT4 .
+
+###  ExploitationRecord propagates to models
+lc:SamaExploitationRecord lc:propagatesTo lc:GPT35 .
+lc:SamaExploitationRecord lc:propagatesTo lc:ChatGPT .
+lc:SamaExploitationRecord lc:propagatesTo lc:GPT4 .
+lc:SamaExploitationRecord lc:propagatesTo lc:GPT4o .
+
+###  ModelLineage individuals
+lc:Lineage_GPT3_to_GPT35 rdf:type owl:NamedIndividual , lc:ModelLineage ;
+                         rdfs:label "GPT-3 to GPT-3.5 Lineage" ;
+                         lc:inheritanceType "fine-tuning+RLHF" ;
+                         lc:exploitationInherited "true"^^xsd:boolean ;
+                         lc:inheritanceDepth "1"^^xsd:integer .
+
+lc:Lineage_GPT35_to_ChatGPT rdf:type owl:NamedIndividual , lc:ModelLineage ;
+                            rdfs:label "GPT-3.5 to ChatGPT Lineage" ;
+                            lc:inheritanceType "fine-tuning" ;
+                            lc:exploitationInherited "true"^^xsd:boolean ;
+                            lc:inheritanceDepth "2"^^xsd:integer .
+
+lc:Lineage_GPT35_to_GPT4 rdf:type owl:NamedIndividual , lc:ModelLineage ;
+                         rdfs:label "GPT-3.5 to GPT-4 Lineage" ;
+                         lc:inheritanceType "fine-tuning+RLHF" ;
+                         lc:exploitationInherited "true"^^xsd:boolean ;
+                         lc:inheritanceDepth "2"^^xsd:integer .
+
+lc:Lineage_GPT4_to_GPT4o rdf:type owl:NamedIndividual , lc:ModelLineage ;
+                         rdfs:label "GPT-4 to GPT-4o Lineage" ;
+                         lc:inheritanceType "fine-tuning" ;
+                         lc:exploitationInherited "true"^^xsd:boolean ;
+                         lc:inheritanceDepth "3"^^xsd:integer .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi

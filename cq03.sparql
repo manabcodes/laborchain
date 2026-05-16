@@ -1,0 +1,10 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?laborUnit ?traumatic ?support
+WHERE {
+  ?laborUnit a lc:LaborUnit ;
+             lc:hasExploitationRecord ?record .
+  ?record lc:traumaticContentProcessed ?traumatic ;
+          lc:psychologicalSupportProvided ?support .
+  FILTER(?traumatic = true && ?support = false)
+}

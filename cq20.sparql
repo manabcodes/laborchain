@@ -1,0 +1,9 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?laborUnit ?suppressed
+WHERE {
+  ?laborUnit a lc:LaborUnit ;
+             lc:hasExploitationRecord ?record .
+  ?record lc:unionizationSuppressed ?suppressed .
+  FILTER(?suppressed = true)
+}

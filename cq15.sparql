@@ -1,0 +1,7 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?model ?baseModel
+WHERE {
+  ?model a lc:AIModel ;
+         lc:inheritsFrom ?baseModel .
+}

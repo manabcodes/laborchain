@@ -1,0 +1,11 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?model (COUNT(?mid) AS ?depth)
+WHERE {
+  ?record lc:propagatesTo ?model .
+  ?model lc:inheritsFrom+ lc:GPT3 .
+  ?model lc:inheritsFrom* ?mid .
+  ?mid lc:inheritsFrom+ lc:GPT3 .
+}
+GROUP BY ?model
+ORDER BY ASC(?depth)

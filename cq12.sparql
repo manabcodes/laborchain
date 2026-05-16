@@ -1,0 +1,8 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?laborUnit ?jurisdiction
+WHERE {
+  ?laborUnit a lc:LaborUnit ;
+             lc:operatesIn ?jurisdiction .
+  ?jurisdiction a lc:Jurisdiction .
+}

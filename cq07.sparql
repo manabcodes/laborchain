@@ -1,0 +1,10 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?laborUnit ?jurisdiction ?flag
+WHERE {
+  ?laborUnit a lc:LaborUnit ;
+             lc:operatesIn ?jurisdiction ;
+             lc:hasExploitationRecord ?record .
+  ?record lc:jurisdictionArbitrageFlag ?flag .
+  FILTER(?flag = true)
+}

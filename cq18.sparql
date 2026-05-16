@@ -1,0 +1,6 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?record ?model
+WHERE {
+  ?record lc:propagatesTo ?model .
+}

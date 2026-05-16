@@ -1,0 +1,6 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?model
+WHERE {
+  ?model lc:inheritsFrom+ lc:GPT3 .
+}

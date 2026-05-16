@@ -1,0 +1,10 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?laborUnit ?wageUSD ?coreWage ?ratio
+WHERE {
+  ?laborUnit a lc:LaborUnit ;
+             lc:hasExploitationRecord ?record .
+  ?record lc:wageUSD ?wageUSD ;
+          lc:coreCountryWageUSD ?coreWage ;
+          lc:wageRatio ?ratio .
+}

@@ -1,0 +1,8 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?laborUnit ?record ?source
+WHERE {
+  ?laborUnit a lc:LaborUnit ;
+             lc:hasExploitationRecord ?record .
+  ?record lc:dataSourced ?source .
+}

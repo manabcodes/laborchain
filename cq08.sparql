@@ -1,0 +1,9 @@
+PREFIX lc: <https://manabcodes.github.io/laborchain#>
+
+SELECT ?laborUnit ?depth
+WHERE {
+  ?laborUnit a lc:LaborUnit ;
+             lc:hasExploitationRecord ?record .
+  ?record lc:subcontractingDepth ?depth .
+}
+ORDER BY DESC(?depth)
