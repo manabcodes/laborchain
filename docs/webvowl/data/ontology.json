@@ -1,0 +1,1130 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/laborchain", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "LaborChain"
+    },
+    "iri" : "https://w3id.org/laborchain",
+    "version" : "1.0.0",
+    "description" : {
+      "en" : "An ontological framework for tracing and documenting labor exploitation provenance in AI training lineages."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "lc",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/laborchain#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "LaborChain",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/laborchain#EvaluationTask",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationTask",
+      "undefined" : "lc:EvaluationTask"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/laborchain#LaborUnit",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LaborUnit",
+      "undefined" : "lc:LaborUnit"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#SamaKenyaWorkers",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "SamaKenyaWorkers",
+        "undefined" : "Sama Kenya Workers"
+      }
+    } ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/laborchain#RLHFAnnotation",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RLHFAnnotation",
+      "undefined" : "lc:RLHFAnnotation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#ChatGPT_RLHFAnnotation",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "ChatGPT_RLHFAnnotation",
+        "undefined" : "ChatGPT RLHF Annotation"
+      }
+    } ],
+    "id" : "16",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/laborchain#ContentModeration",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContentModeration",
+      "undefined" : "lc:ContentModeration"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#ChatGPT_ContentModeration",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "ChatGPT_ContentModeration",
+        "undefined" : "ChatGPT Content Moderation"
+      }
+    } ],
+    "id" : "17",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/laborchain#LaborTask",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LaborTask",
+      "undefined" : "lc:LaborTask"
+    },
+    "subClasses" : [ "11", "16", "17", "18", "19", "20" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/laborchain#JurisdictionalArbitrage",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JurisdictionalArbitrage",
+      "undefined" : "lc:JurisdictionalArbitrage"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#SamaExploitationRecord",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "SamaExploitationRecord",
+        "undefined" : "Sama Kenya Exploitation Record"
+      }
+    } ],
+    "id" : "33",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/laborchain#AIModel",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AIModel",
+      "undefined" : "lc:AIModel"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#GPT3",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "GPT3",
+        "undefined" : "GPT-3"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#GPT4o",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "GPT4o",
+        "undefined" : "GPT-4o"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#ChatGPT",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "ChatGPT",
+        "undefined" : "ChatGPT"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#GPT4",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "GPT4",
+        "undefined" : "GPT-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#GPT35",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "GPT35",
+        "undefined" : "GPT-3.5"
+      }
+    } ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/laborchain#Contractor",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contractor",
+      "undefined" : "lc:Contractor"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#OpenAI",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "OpenAI",
+        "undefined" : "OpenAI"
+      }
+    } ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/laborchain#Subcontractor",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subcontractor",
+      "undefined" : "lc:Subcontractor"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#Sama",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "Sama",
+        "undefined" : "Sama"
+      }
+    } ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/laborchain#TrainingDataset",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainingDataset",
+      "undefined" : "lc:TrainingDataset"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#C4",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "C4",
+        "undefined" : "C4"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#InstructGPT_RLHF",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "InstructGPT_RLHF",
+        "undefined" : "InstructGPT RLHF Dataset"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#WebText",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "WebText",
+        "undefined" : "WebText"
+      }
+    } ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/laborchain#DataLabeling",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataLabeling",
+      "undefined" : "lc:DataLabeling"
+    },
+    "id" : "18",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "26",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "45" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/laborchain#WageExploitation",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WageExploitation",
+      "undefined" : "lc:WageExploitation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#SamaExploitationRecord",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "SamaExploitationRecord",
+        "undefined" : "Sama Kenya Exploitation Record"
+      }
+    } ],
+    "id" : "38",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/laborchain#LaborRightsSuppression",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LaborRightsSuppression",
+      "undefined" : "lc:LaborRightsSuppression"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#SamaExploitationRecord",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "SamaExploitationRecord",
+        "undefined" : "Sama Kenya Exploitation Record"
+      }
+    } ],
+    "id" : "40",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://w3id.org/laborchain#LocalizationTask",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LocalizationTask",
+      "undefined" : "lc:LocalizationTask"
+    },
+    "id" : "20",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/laborchain#ModelLineage",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModelLineage",
+      "undefined" : "lc:ModelLineage"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "Lineage_GPT4_to_GPT4o",
+        "undefined" : "GPT-4 to GPT-4o Lineage"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "Lineage_GPT35_to_ChatGPT",
+        "undefined" : "GPT-3.5 to ChatGPT Lineage"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#Lineage_GPT3_to_GPT35",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "Lineage_GPT3_to_GPT35",
+        "undefined" : "GPT-3 to GPT-3.5 Lineage"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#Lineage_GPT35_to_GPT4",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "Lineage_GPT35_to_GPT4",
+        "undefined" : "GPT-3.5 to GPT-4 Lineage"
+      }
+    } ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://w3id.org/laborchain#PsychologicalExploitation",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PsychologicalExploitation",
+      "undefined" : "lc:PsychologicalExploitation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#SamaExploitationRecord",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "SamaExploitationRecord",
+        "undefined" : "Sama Kenya Exploitation Record"
+      }
+    } ],
+    "id" : "35",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/laborchain#ExploitationRecord",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExploitationRecord",
+      "undefined" : "lc:ExploitationRecord"
+    },
+    "subClasses" : [ "44", "33", "35", "40", "38", "22" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/laborchain#TranscriptionTask",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TranscriptionTask",
+      "undefined" : "lc:TranscriptionTask"
+    },
+    "id" : "19",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/laborchain#Jurisdiction",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Jurisdiction",
+      "undefined" : "lc:Jurisdiction"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#UnitedStates",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "UnitedStates",
+        "undefined" : "United States"
+      }
+    }, {
+      "iri" : "https://w3id.org/laborchain#Kenya",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "Kenya",
+        "undefined" : "Kenya"
+      }
+    } ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/laborchain#ConsentVitiation",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConsentVitiation",
+      "undefined" : "lc:ConsentVitiation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#SamaExploitationRecord",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "SamaExploitationRecord",
+        "undefined" : "Sama Kenya Exploitation Record"
+      }
+    } ],
+    "id" : "44",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/laborchain#AccountabilityFragmentation",
+    "baseIri" : "https://w3id.org/laborchain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccountabilityFragmentation",
+      "undefined" : "lc:AccountabilityFragmentation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/laborchain#SamaExploitationRecord",
+      "baseIri" : "https://w3id.org/laborchain",
+      "labels" : {
+        "IRI-based" : "SamaExploitationRecord",
+        "undefined" : "Sama Kenya Exploitation Record"
+      }
+    } ],
+    "id" : "22",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/laborchain#inheritanceDepth",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "inheritanceDepth",
+      "undefined" : "lc:inheritanceDepth"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/laborchain#traumaticContentProcessed",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "traumaticContentProcessed",
+      "undefined" : "lc:traumaticContentProcessed"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/laborchain#hasExploitationRecord",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasExploitationRecord",
+      "undefined" : "lc:hasExploitationRecord"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/laborchain#wageRatio",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "wageRatio",
+      "undefined" : "lc:wageRatio"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/laborchain#contractedBy",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "contractedBy",
+      "undefined" : "lc:contractedBy"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "14",
+    "attributes" : [ "object", "transitive" ],
+    "id" : "13"
+  }, {
+    "range" : "4",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/laborchain#trainedOn",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "trainedOn",
+      "undefined" : "lc:trainedOn"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "26",
+    "subproperty" : [ "27", "13", "28", "23", "29", "30", "31", "32", "6" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "4",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "4",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "4",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/laborchain#labeledBy",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "labeledBy",
+      "undefined" : "lc:labeledBy"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "range" : "4",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "12",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "12",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "4",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "12",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/laborchain#unionizationSuppressed",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "unionizationSuppressed",
+      "undefined" : "lc:unionizationSuppressed"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/laborchain#consentVitiatedByCoercion",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "consentVitiatedByCoercion",
+      "undefined" : "lc:consentVitiatedByCoercion"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/laborchain#psychologicalHarmDocumented",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "psychologicalHarmDocumented",
+      "undefined" : "lc:psychologicalHarmDocumented"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/laborchain#employedBy",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "employedBy",
+      "undefined" : "lc:employedBy"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/laborchain#propagatesTo",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "propagatesTo",
+      "undefined" : "lc:propagatesTo"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "12",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/laborchain#coreCountryWageUSD",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "coreCountryWageUSD",
+      "undefined" : "lc:coreCountryWageUSD"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/laborchain#exploitationInherited",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "exploitationInherited",
+      "undefined" : "lc:exploitationInherited"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/laborchain#psychologicalSupportProvided",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "psychologicalSupportProvided",
+      "undefined" : "lc:psychologicalSupportProvided"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/laborchain#performsTask",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "performsTask",
+      "undefined" : "lc:performsTask"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/laborchain#subcontractingDepth",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "subcontractingDepth",
+      "undefined" : "lc:subcontractingDepth"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/laborchain#wageUSD",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "wageUSD",
+      "undefined" : "lc:wageUSD"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/laborchain#inheritanceType",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "inheritanceType",
+      "undefined" : "lc:inheritanceType"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/laborchain#dataSourced",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "dataSourced",
+      "undefined" : "lc:dataSourced"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/laborchain#operatesIn",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "operatesIn",
+      "undefined" : "lc:operatesIn"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/laborchain#jurisdictionArbitrageFlag",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "jurisdictionArbitrageFlag",
+      "undefined" : "lc:jurisdictionArbitrageFlag"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/laborchain#inheritsFrom",
+    "baseIri" : "https://w3id.org/laborchain",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "inheritsFrom",
+      "undefined" : "lc:inheritsFrom"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  } ]
+}

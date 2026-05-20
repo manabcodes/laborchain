@@ -1,0 +1,475 @@
+<https://w3id.org/laborchain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/laborchain> <http://purl.org/dc/terms/description> "An ontological framework for tracing and documenting labor exploitation provenance in AI training lineages."@en .
+<https://w3id.org/laborchain> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/laborchain> <http://purl.org/dc/terms/title> "LaborChain"@en .
+<https://w3id.org/laborchain> <http://purl.org/vocab/vann/preferredNamespacePrefix> "lc" .
+<https://w3id.org/laborchain> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/laborchain#" .
+<https://w3id.org/laborchain> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/laborchain#contractedBy
+<https://w3id.org/laborchain#contractedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#contractedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#contractedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/laborchain#contractedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#Subcontractor> .
+<https://w3id.org/laborchain#contractedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#Contractor> .
+<https://w3id.org/laborchain#contractedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#Subcontractor> .
+<https://w3id.org/laborchain#contractedBy> <http://www.w3.org/2000/01/rdf-schema#label> "lc:contractedBy" .
+# 
+# https://w3id.org/laborchain#employedBy
+<https://w3id.org/laborchain#employedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#employedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#employedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#LaborUnit> .
+<https://w3id.org/laborchain#employedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#Subcontractor> .
+<https://w3id.org/laborchain#employedBy> <http://www.w3.org/2000/01/rdf-schema#label> "lc:employedBy" .
+# 
+# https://w3id.org/laborchain#hasExploitationRecord
+<https://w3id.org/laborchain#hasExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#hasExploitationRecord> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#hasExploitationRecord> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#LaborUnit> .
+<https://w3id.org/laborchain#hasExploitationRecord> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#hasExploitationRecord> <http://www.w3.org/2000/01/rdf-schema#label> "lc:hasExploitationRecord" .
+# 
+# https://w3id.org/laborchain#inheritsFrom
+<https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/2000/01/rdf-schema#label> "lc:inheritsFrom" .
+# 
+# https://w3id.org/laborchain#labeledBy
+<https://w3id.org/laborchain#labeledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#labeledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#labeledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#TrainingDataset> .
+<https://w3id.org/laborchain#labeledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#LaborUnit> .
+<https://w3id.org/laborchain#labeledBy> <http://www.w3.org/2000/01/rdf-schema#label> "lc:labeledBy" .
+# 
+# https://w3id.org/laborchain#operatesIn
+<https://w3id.org/laborchain#operatesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#operatesIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#operatesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#LaborUnit> .
+<https://w3id.org/laborchain#operatesIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#Jurisdiction> .
+<https://w3id.org/laborchain#operatesIn> <http://www.w3.org/2000/01/rdf-schema#label> "lc:operatesIn" .
+# 
+# https://w3id.org/laborchain#performsTask
+<https://w3id.org/laborchain#performsTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#performsTask> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#performsTask> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#LaborUnit> .
+<https://w3id.org/laborchain#performsTask> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#LaborTask> .
+<https://w3id.org/laborchain#performsTask> <http://www.w3.org/2000/01/rdf-schema#label> "lc:performsTask" .
+# 
+# https://w3id.org/laborchain#propagatesTo
+<https://w3id.org/laborchain#propagatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#propagatesTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#propagatesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#propagatesTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#propagatesTo> <http://www.w3.org/2000/01/rdf-schema#label> "lc:propagatesTo" .
+# 
+# https://w3id.org/laborchain#trainedOn
+<https://w3id.org/laborchain#trainedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#trainedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#trainedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#trainedOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#TrainingDataset> .
+<https://w3id.org/laborchain#trainedOn> <http://www.w3.org/2000/01/rdf-schema#label> "lc:trainedOn" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/laborchain#consentVitiatedByCoercion
+<https://w3id.org/laborchain#consentVitiatedByCoercion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#consentVitiatedByCoercion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#consentVitiatedByCoercion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#consentVitiatedByCoercion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#consentVitiatedByCoercion> <http://www.w3.org/2000/01/rdf-schema#label> "lc:consentVitiatedByCoercion" .
+# 
+# https://w3id.org/laborchain#coreCountryWageUSD
+<https://w3id.org/laborchain#coreCountryWageUSD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#coreCountryWageUSD> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#coreCountryWageUSD> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#coreCountryWageUSD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/laborchain#coreCountryWageUSD> <http://www.w3.org/2000/01/rdf-schema#label> "lc:coreCountryWageUSD" .
+# 
+# https://w3id.org/laborchain#dataSourced
+<https://w3id.org/laborchain#dataSourced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#dataSourced> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#dataSourced> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#dataSourced> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/laborchain#dataSourced> <http://www.w3.org/2000/01/rdf-schema#label> "lc:dataSourced" .
+# 
+# https://w3id.org/laborchain#exploitationInherited
+<https://w3id.org/laborchain#exploitationInherited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#exploitationInherited> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#exploitationInherited> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ModelLineage> .
+<https://w3id.org/laborchain#exploitationInherited> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#exploitationInherited> <http://www.w3.org/2000/01/rdf-schema#label> "lc:exploitationInherited" .
+# 
+# https://w3id.org/laborchain#inheritanceDepth
+<https://w3id.org/laborchain#inheritanceDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#inheritanceDepth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#inheritanceDepth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ModelLineage> .
+<https://w3id.org/laborchain#inheritanceDepth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/laborchain#inheritanceDepth> <http://www.w3.org/2000/01/rdf-schema#label> "lc:inheritanceDepth" .
+# 
+# https://w3id.org/laborchain#inheritanceType
+<https://w3id.org/laborchain#inheritanceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#inheritanceType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#inheritanceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ModelLineage> .
+<https://w3id.org/laborchain#inheritanceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/laborchain#inheritanceType> <http://www.w3.org/2000/01/rdf-schema#label> "lc:inheritanceType" .
+# 
+# https://w3id.org/laborchain#jurisdictionArbitrageFlag
+<https://w3id.org/laborchain#jurisdictionArbitrageFlag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#jurisdictionArbitrageFlag> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#jurisdictionArbitrageFlag> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#jurisdictionArbitrageFlag> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#jurisdictionArbitrageFlag> <http://www.w3.org/2000/01/rdf-schema#label> "lc:jurisdictionArbitrageFlag" .
+# 
+# https://w3id.org/laborchain#psychologicalHarmDocumented
+<https://w3id.org/laborchain#psychologicalHarmDocumented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#psychologicalHarmDocumented> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#psychologicalHarmDocumented> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#psychologicalHarmDocumented> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#psychologicalHarmDocumented> <http://www.w3.org/2000/01/rdf-schema#label> "lc:psychologicalHarmDocumented" .
+# 
+# https://w3id.org/laborchain#psychologicalSupportProvided
+<https://w3id.org/laborchain#psychologicalSupportProvided> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#psychologicalSupportProvided> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#psychologicalSupportProvided> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#psychologicalSupportProvided> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#psychologicalSupportProvided> <http://www.w3.org/2000/01/rdf-schema#label> "lc:psychologicalSupportProvided" .
+# 
+# https://w3id.org/laborchain#subcontractingDepth
+<https://w3id.org/laborchain#subcontractingDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#subcontractingDepth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#subcontractingDepth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#subcontractingDepth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/laborchain#subcontractingDepth> <http://www.w3.org/2000/01/rdf-schema#label> "lc:subcontractingDepth" .
+# 
+# https://w3id.org/laborchain#traumaticContentProcessed
+<https://w3id.org/laborchain#traumaticContentProcessed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#traumaticContentProcessed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#traumaticContentProcessed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#traumaticContentProcessed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#traumaticContentProcessed> <http://www.w3.org/2000/01/rdf-schema#label> "lc:traumaticContentProcessed" .
+# 
+# https://w3id.org/laborchain#unionizationSuppressed
+<https://w3id.org/laborchain#unionizationSuppressed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#unionizationSuppressed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#unionizationSuppressed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#unionizationSuppressed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#unionizationSuppressed> <http://www.w3.org/2000/01/rdf-schema#label> "lc:unionizationSuppressed" .
+# 
+# https://w3id.org/laborchain#wageRatio
+<https://w3id.org/laborchain#wageRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#wageRatio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#wageRatio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#wageRatio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/laborchain#wageRatio> <http://www.w3.org/2000/01/rdf-schema#label> "lc:wageRatio" .
+# 
+# https://w3id.org/laborchain#wageUSD
+<https://w3id.org/laborchain#wageUSD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/laborchain#wageUSD> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/laborchain#wageUSD> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#wageUSD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/laborchain#wageUSD> <http://www.w3.org/2000/01/rdf-schema#label> "lc:wageUSD" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/laborchain#AIModel
+<https://w3id.org/laborchain#AIModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#AIModel> <http://www.w3.org/2000/01/rdf-schema#label> "lc:AIModel" .
+# 
+# https://w3id.org/laborchain#AccountabilityFragmentation
+<https://w3id.org/laborchain#AccountabilityFragmentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#AccountabilityFragmentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#AccountabilityFragmentation> <http://www.w3.org/2000/01/rdf-schema#label> "lc:AccountabilityFragmentation" .
+# 
+# https://w3id.org/laborchain#ConsentVitiation
+<https://w3id.org/laborchain#ConsentVitiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#ConsentVitiation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#ConsentVitiation> <http://www.w3.org/2000/01/rdf-schema#label> "lc:ConsentVitiation" .
+# 
+# https://w3id.org/laborchain#ContentModeration
+<https://w3id.org/laborchain#ContentModeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#ContentModeration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#LaborTask> .
+<https://w3id.org/laborchain#ContentModeration> <http://www.w3.org/2000/01/rdf-schema#label> "lc:ContentModeration" .
+# 
+# https://w3id.org/laborchain#Contractor
+<https://w3id.org/laborchain#Contractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#Contractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/laborchain#Contractor> <http://www.w3.org/2000/01/rdf-schema#label> "lc:Contractor" .
+# 
+# https://w3id.org/laborchain#DataLabeling
+<https://w3id.org/laborchain#DataLabeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#DataLabeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#LaborTask> .
+<https://w3id.org/laborchain#DataLabeling> <http://www.w3.org/2000/01/rdf-schema#label> "lc:DataLabeling" .
+# 
+# https://w3id.org/laborchain#EvaluationTask
+<https://w3id.org/laborchain#EvaluationTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#EvaluationTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#LaborTask> .
+<https://w3id.org/laborchain#EvaluationTask> <http://www.w3.org/2000/01/rdf-schema#label> "lc:EvaluationTask" .
+# 
+# https://w3id.org/laborchain#ExploitationRecord
+<https://w3id.org/laborchain#ExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#ExploitationRecord> <http://www.w3.org/2000/01/rdf-schema#label> "lc:ExploitationRecord" .
+# 
+# https://w3id.org/laborchain#Jurisdiction
+<https://w3id.org/laborchain#Jurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#Jurisdiction> <http://www.w3.org/2000/01/rdf-schema#label> "lc:Jurisdiction" .
+# 
+# https://w3id.org/laborchain#JurisdictionalArbitrage
+<https://w3id.org/laborchain#JurisdictionalArbitrage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#JurisdictionalArbitrage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#JurisdictionalArbitrage> <http://www.w3.org/2000/01/rdf-schema#label> "lc:JurisdictionalArbitrage" .
+# 
+# https://w3id.org/laborchain#LaborRightsSuppression
+<https://w3id.org/laborchain#LaborRightsSuppression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#LaborRightsSuppression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#LaborRightsSuppression> <http://www.w3.org/2000/01/rdf-schema#label> "lc:LaborRightsSuppression" .
+# 
+# https://w3id.org/laborchain#LaborTask
+<https://w3id.org/laborchain#LaborTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#LaborTask> <http://www.w3.org/2000/01/rdf-schema#label> "lc:LaborTask" .
+# 
+# https://w3id.org/laborchain#LaborUnit
+<https://w3id.org/laborchain#LaborUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#LaborUnit> <http://www.w3.org/2000/01/rdf-schema#label> "lc:LaborUnit" .
+# 
+# https://w3id.org/laborchain#LocalizationTask
+<https://w3id.org/laborchain#LocalizationTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#LocalizationTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#LaborTask> .
+<https://w3id.org/laborchain#LocalizationTask> <http://www.w3.org/2000/01/rdf-schema#label> "lc:LocalizationTask" .
+# 
+# https://w3id.org/laborchain#ModelLineage
+<https://w3id.org/laborchain#ModelLineage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#ModelLineage> <http://www.w3.org/2000/01/rdf-schema#label> "lc:ModelLineage" .
+# 
+# https://w3id.org/laborchain#PsychologicalExploitation
+<https://w3id.org/laborchain#PsychologicalExploitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#PsychologicalExploitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#PsychologicalExploitation> <http://www.w3.org/2000/01/rdf-schema#label> "lc:PsychologicalExploitation" .
+# 
+# https://w3id.org/laborchain#RLHFAnnotation
+<https://w3id.org/laborchain#RLHFAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#RLHFAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#LaborTask> .
+<https://w3id.org/laborchain#RLHFAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "lc:RLHFAnnotation" .
+# 
+# https://w3id.org/laborchain#Subcontractor
+<https://w3id.org/laborchain#Subcontractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#Subcontractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/laborchain#Subcontractor> <http://www.w3.org/2000/01/rdf-schema#label> "lc:Subcontractor" .
+# 
+# https://w3id.org/laborchain#TrainingDataset
+<https://w3id.org/laborchain#TrainingDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#TrainingDataset> <http://www.w3.org/2000/01/rdf-schema#label> "lc:TrainingDataset" .
+# 
+# https://w3id.org/laborchain#TranscriptionTask
+<https://w3id.org/laborchain#TranscriptionTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#TranscriptionTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#LaborTask> .
+<https://w3id.org/laborchain#TranscriptionTask> <http://www.w3.org/2000/01/rdf-schema#label> "lc:TranscriptionTask" .
+# 
+# https://w3id.org/laborchain#WageExploitation
+<https://w3id.org/laborchain#WageExploitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/laborchain#WageExploitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/laborchain#ExploitationRecord> .
+<https://w3id.org/laborchain#WageExploitation> <http://www.w3.org/2000/01/rdf-schema#label> "lc:WageExploitation" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/laborchain#C4
+<https://w3id.org/laborchain#C4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#C4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#TrainingDataset> .
+<https://w3id.org/laborchain#C4> <http://www.w3.org/2000/01/rdf-schema#label> "C4" .
+# 
+# https://w3id.org/laborchain#ChatGPT
+<https://w3id.org/laborchain#ChatGPT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#ChatGPT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#ChatGPT> <https://w3id.org/laborchain#inheritsFrom> <https://w3id.org/laborchain#GPT35> .
+<https://w3id.org/laborchain#ChatGPT> <http://www.w3.org/2000/01/rdf-schema#label> "ChatGPT" .
+# 
+# https://w3id.org/laborchain#ChatGPT_ContentModeration
+<https://w3id.org/laborchain#ChatGPT_ContentModeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#ChatGPT_ContentModeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#ContentModeration> .
+<https://w3id.org/laborchain#ChatGPT_ContentModeration> <http://www.w3.org/2000/01/rdf-schema#label> "ChatGPT Content Moderation" .
+# 
+# https://w3id.org/laborchain#ChatGPT_RLHFAnnotation
+<https://w3id.org/laborchain#ChatGPT_RLHFAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#ChatGPT_RLHFAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#RLHFAnnotation> .
+<https://w3id.org/laborchain#ChatGPT_RLHFAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "ChatGPT RLHF Annotation" .
+# 
+# https://w3id.org/laborchain#GPT3
+<https://w3id.org/laborchain#GPT3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#GPT3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#GPT3> <https://w3id.org/laborchain#trainedOn> <https://w3id.org/laborchain#C4> .
+<https://w3id.org/laborchain#GPT3> <https://w3id.org/laborchain#trainedOn> <https://w3id.org/laborchain#WebText> .
+<https://w3id.org/laborchain#GPT3> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-3" .
+# 
+# https://w3id.org/laborchain#GPT35
+<https://w3id.org/laborchain#GPT35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#GPT35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#GPT35> <https://w3id.org/laborchain#inheritsFrom> <https://w3id.org/laborchain#GPT3> .
+<https://w3id.org/laborchain#GPT35> <https://w3id.org/laborchain#trainedOn> <https://w3id.org/laborchain#InstructGPT_RLHF> .
+<https://w3id.org/laborchain#GPT35> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-3.5" .
+# 
+# https://w3id.org/laborchain#GPT4
+<https://w3id.org/laborchain#GPT4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#GPT4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#GPT4> <https://w3id.org/laborchain#inheritsFrom> <https://w3id.org/laborchain#GPT35> .
+<https://w3id.org/laborchain#GPT4> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-4" .
+# 
+# https://w3id.org/laborchain#GPT4o
+<https://w3id.org/laborchain#GPT4o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#GPT4o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#GPT4o> <https://w3id.org/laborchain#inheritsFrom> <https://w3id.org/laborchain#GPT4> .
+<https://w3id.org/laborchain#GPT4o> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-4o" .
+# 
+# https://w3id.org/laborchain#InstructGPT_RLHF
+<https://w3id.org/laborchain#InstructGPT_RLHF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#InstructGPT_RLHF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#TrainingDataset> .
+<https://w3id.org/laborchain#InstructGPT_RLHF> <https://w3id.org/laborchain#labeledBy> <https://w3id.org/laborchain#SamaKenyaWorkers> .
+<https://w3id.org/laborchain#InstructGPT_RLHF> <http://www.w3.org/2000/01/rdf-schema#label> "InstructGPT RLHF Dataset" .
+# 
+# https://w3id.org/laborchain#Kenya
+<https://w3id.org/laborchain#Kenya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#Kenya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#Jurisdiction> .
+<https://w3id.org/laborchain#Kenya> <http://www.w3.org/2000/01/rdf-schema#label> "Kenya" .
+# 
+# https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT
+<https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#ModelLineage> .
+<https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT> <https://w3id.org/laborchain#exploitationInherited> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT> <https://w3id.org/laborchain#inheritanceDepth> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT> <https://w3id.org/laborchain#inheritanceType> "fine-tuning" .
+<https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-3.5 to ChatGPT Lineage" .
+# 
+# https://w3id.org/laborchain#Lineage_GPT35_to_GPT4
+<https://w3id.org/laborchain#Lineage_GPT35_to_GPT4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#Lineage_GPT35_to_GPT4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#ModelLineage> .
+<https://w3id.org/laborchain#Lineage_GPT35_to_GPT4> <https://w3id.org/laborchain#exploitationInherited> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#Lineage_GPT35_to_GPT4> <https://w3id.org/laborchain#inheritanceDepth> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/laborchain#Lineage_GPT35_to_GPT4> <https://w3id.org/laborchain#inheritanceType> "fine-tuning+RLHF" .
+<https://w3id.org/laborchain#Lineage_GPT35_to_GPT4> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-3.5 to GPT-4 Lineage" .
+# 
+# https://w3id.org/laborchain#Lineage_GPT3_to_GPT35
+<https://w3id.org/laborchain#Lineage_GPT3_to_GPT35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#Lineage_GPT3_to_GPT35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#ModelLineage> .
+<https://w3id.org/laborchain#Lineage_GPT3_to_GPT35> <https://w3id.org/laborchain#exploitationInherited> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#Lineage_GPT3_to_GPT35> <https://w3id.org/laborchain#inheritanceDepth> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/laborchain#Lineage_GPT3_to_GPT35> <https://w3id.org/laborchain#inheritanceType> "fine-tuning+RLHF" .
+<https://w3id.org/laborchain#Lineage_GPT3_to_GPT35> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-3 to GPT-3.5 Lineage" .
+# 
+# https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o
+<https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#ModelLineage> .
+<https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o> <https://w3id.org/laborchain#exploitationInherited> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o> <https://w3id.org/laborchain#inheritanceDepth> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o> <https://w3id.org/laborchain#inheritanceType> "fine-tuning" .
+<https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-4 to GPT-4o Lineage" .
+# 
+# https://w3id.org/laborchain#OpenAI
+<https://w3id.org/laborchain#OpenAI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#OpenAI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#Contractor> .
+<https://w3id.org/laborchain#OpenAI> <http://www.w3.org/2000/01/rdf-schema#label> "OpenAI" .
+# 
+# https://w3id.org/laborchain#Sama
+<https://w3id.org/laborchain#Sama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#Sama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#Subcontractor> .
+<https://w3id.org/laborchain#Sama> <https://w3id.org/laborchain#contractedBy> <https://w3id.org/laborchain#OpenAI> .
+<https://w3id.org/laborchain#Sama> <http://www.w3.org/2000/01/rdf-schema#label> "Sama" .
+# 
+# https://w3id.org/laborchain#SamaExploitationRecord
+<https://w3id.org/laborchain#SamaExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AccountabilityFragmentation> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#ConsentVitiation> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#JurisdictionalArbitrage> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#LaborRightsSuppression> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#PsychologicalExploitation> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#WageExploitation> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#propagatesTo> <https://w3id.org/laborchain#ChatGPT> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#propagatesTo> <https://w3id.org/laborchain#GPT35> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#propagatesTo> <https://w3id.org/laborchain#GPT4> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#propagatesTo> <https://w3id.org/laborchain#GPT4o> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#consentVitiatedByCoercion> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#coreCountryWageUSD> "15.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#dataSourced> "Perrigo, B. TIME Magazine, January 2023; worker testimony" .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#jurisdictionArbitrageFlag> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#psychologicalHarmDocumented> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#psychologicalSupportProvided> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#subcontractingDepth> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#traumaticContentProcessed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#unionizationSuppressed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#wageRatio> "0.09"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <https://w3id.org/laborchain#wageUSD> "1.32"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/laborchain#SamaExploitationRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Sama Kenya Exploitation Record" .
+# 
+# https://w3id.org/laborchain#SamaKenyaWorkers
+<https://w3id.org/laborchain#SamaKenyaWorkers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#SamaKenyaWorkers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#LaborUnit> .
+<https://w3id.org/laborchain#SamaKenyaWorkers> <https://w3id.org/laborchain#employedBy> <https://w3id.org/laborchain#Sama> .
+<https://w3id.org/laborchain#SamaKenyaWorkers> <https://w3id.org/laborchain#hasExploitationRecord> <https://w3id.org/laborchain#SamaExploitationRecord> .
+<https://w3id.org/laborchain#SamaKenyaWorkers> <https://w3id.org/laborchain#operatesIn> <https://w3id.org/laborchain#Kenya> .
+<https://w3id.org/laborchain#SamaKenyaWorkers> <https://w3id.org/laborchain#performsTask> <https://w3id.org/laborchain#ChatGPT_ContentModeration> .
+<https://w3id.org/laborchain#SamaKenyaWorkers> <https://w3id.org/laborchain#performsTask> <https://w3id.org/laborchain#ChatGPT_RLHFAnnotation> .
+<https://w3id.org/laborchain#SamaKenyaWorkers> <http://www.w3.org/2000/01/rdf-schema#label> "Sama Kenya Workers" .
+# 
+# https://w3id.org/laborchain#UnitedStates
+<https://w3id.org/laborchain#UnitedStates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#UnitedStates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#Jurisdiction> .
+<https://w3id.org/laborchain#UnitedStates> <http://www.w3.org/2000/01/rdf-schema#label> "United States" .
+# 
+# https://w3id.org/laborchain#WebText
+<https://w3id.org/laborchain#WebText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/laborchain#WebText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#TrainingDataset> .
+<https://w3id.org/laborchain#WebText> <http://www.w3.org/2000/01/rdf-schema#label> "WebText" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
