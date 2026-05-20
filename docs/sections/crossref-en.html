@@ -51,7 +51,7 @@ This section provides details for each class and property defined by LaborChain.
     is in domain of
    </dt>
    <dd>
-    <a href="#inheritsFrom" title="https://w3id.org/laborchain#inheritsFrom">lc:inheritsFrom</a> <sup class="type-op" title="object property">op</sup>, <a href="#trainedOn" title="https://w3id.org/laborchain#trainedOn">lc:trainedOn</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasLineage" title="https://w3id.org/laborchain#hasLineage">lc:hasLineage</a> <sup class="type-op" title="object property">op</sup>, <a href="#inheritsFrom" title="https://w3id.org/laborchain#inheritsFrom">lc:inheritsFrom</a> <sup class="type-op" title="object property">op</sup>, <a href="#trainedOn" title="https://w3id.org/laborchain#trainedOn">lc:trainedOn</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -294,6 +294,12 @@ This section provides details for each class and property defined by LaborChain.
     <a href="#exploitationInherited" title="https://w3id.org/laborchain#exploitationInherited">lc:exploitationInherited</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#inheritanceDepth" title="https://w3id.org/laborchain#inheritanceDepth">lc:inheritanceDepth</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#inheritanceType" title="https://w3id.org/laborchain#inheritanceType">lc:inheritanceType</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasLineage" title="https://w3id.org/laborchain#hasLineage">lc:hasLineage</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
     has members
    </dt>
    <dd>
@@ -427,6 +433,7 @@ This section provides details for each class and property defined by LaborChain.
   <li><a href="#contractedBy" title="https://w3id.org/laborchain#contractedBy">lc:contractedBy</a></li>
   <li><a href="#employedBy" title="https://w3id.org/laborchain#employedBy">lc:employedBy</a></li>
   <li><a href="#hasExploitationRecord" title="https://w3id.org/laborchain#hasExploitationRecord">lc:hasExploitationRecord</a></li>
+  <li><a href="#hasLineage" title="https://w3id.org/laborchain#hasLineage">lc:hasLineage</a></li>
   <li><a href="#inheritsFrom" title="https://w3id.org/laborchain#inheritsFrom">lc:inheritsFrom</a></li>
   <li><a href="#labeledBy" title="https://w3id.org/laborchain#labeledBy">lc:labeledBy</a></li>
   <li><a href="#operatesIn" title="https://w3id.org/laborchain#operatesIn">lc:operatesIn</a></li>
@@ -516,10 +523,37 @@ This section provides details for each class and property defined by LaborChain.
    </dl>
   </div>
  </div>
+ <div class="entity" id="hasLineage">
+  <h3>lc:hasLineage<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/laborchain#hasLineage</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AIModel" title="https://w3id.org/laborchain#AIModel">lc:AIModel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ModelLineage" title="https://w3id.org/laborchain#ModelLineage">lc:ModelLineage</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="inheritsFrom">
   <h3>lc:inheritsFrom<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/laborchain#inheritsFrom</p>
   <div class="description">
+   <p><strong>has characteristics: </strong> transitive</p>
    <dl>
     <dt>
      has super-properties
@@ -1133,6 +1167,9 @@ This section provides details for each class and property defined by LaborChain.
     has facts
    </dt>
    <dd>
+    <a href="#hasLineage" title="https://w3id.org/laborchain#hasLineage">lc:hasLineage</a> <sup class="type-op" title="object property">op</sup> <a href="#Lineage_GPT35_to_ChatGPT" title="https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT">GPT-3.5 to ChatGPT Lineage</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
     <a href="#inheritsFrom" title="https://w3id.org/laborchain#inheritsFrom">lc:inheritsFrom</a> <sup class="type-op" title="object property">op</sup> <a href="#GPT35" title="https://w3id.org/laborchain#GPT35">GPT-3.5</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
@@ -1220,6 +1257,9 @@ This section provides details for each class and property defined by LaborChain.
     has facts
    </dt>
    <dd>
+    <a href="#hasLineage" title="https://w3id.org/laborchain#hasLineage">lc:hasLineage</a> <sup class="type-op" title="object property">op</sup> <a href="#Lineage_GPT3_to_GPT35" title="https://w3id.org/laborchain#Lineage_GPT3_to_GPT35">GPT-3 to GPT-3.5 Lineage</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
     <a href="#inheritsFrom" title="https://w3id.org/laborchain#inheritsFrom">lc:inheritsFrom</a> <sup class="type-op" title="object property">op</sup> <a href="#GPT3" title="https://w3id.org/laborchain#GPT3">GPT-3</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
@@ -1289,6 +1329,9 @@ This section provides details for each class and property defined by LaborChain.
     has facts
    </dt>
    <dd>
+    <a href="#hasLineage" title="https://w3id.org/laborchain#hasLineage">lc:hasLineage</a> <sup class="type-op" title="object property">op</sup> <a href="#Lineage_GPT35_to_GPT4" title="https://w3id.org/laborchain#Lineage_GPT35_to_GPT4">GPT-3.5 to GPT-4 Lineage</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
     <a href="#inheritsFrom" title="https://w3id.org/laborchain#inheritsFrom">lc:inheritsFrom</a> <sup class="type-op" title="object property">op</sup> <a href="#GPT35" title="https://w3id.org/laborchain#GPT35">GPT-3.5</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
@@ -1330,6 +1373,9 @@ This section provides details for each class and property defined by LaborChain.
    <dt>
     has facts
    </dt>
+   <dd>
+    <a href="#hasLineage" title="https://w3id.org/laborchain#hasLineage">lc:hasLineage</a> <sup class="type-op" title="object property">op</sup> <a href="#Lineage_GPT4_to_GPT4o" title="https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o">GPT-4 to GPT-4o Lineage</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
    <dd>
     <a href="#inheritsFrom" title="https://w3id.org/laborchain#inheritsFrom">lc:inheritsFrom</a> <sup class="type-op" title="object property">op</sup> <a href="#GPT4" title="https://w3id.org/laborchain#GPT4">GPT-4</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>

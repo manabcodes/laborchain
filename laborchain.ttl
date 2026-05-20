@@ -48,11 +48,20 @@ lc:hasExploitationRecord rdf:type owl:ObjectProperty ;
 
 
 ###  https://manabcodes.github.io/laborchain#inheritsFrom
-lc:inheritsFrom rdf:type owl:ObjectProperty ;
+lc:inheritsFrom rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
                 rdfs:domain lc:AIModel ;
                 rdfs:range lc:AIModel ;
                 rdfs:label "lc:inheritsFrom" .
+
+
+###  https://w3id.org/laborchain#hasLineage
+lc:hasLineage rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain lc:AIModel ;
+              rdfs:range lc:ModelLineage ;
+              rdfs:label "lc:hasLineage" .
 
 
 ###  https://manabcodes.github.io/laborchain#labeledBy
@@ -429,6 +438,12 @@ lc:GPT4 rdf:type owl:NamedIndividual , lc:AIModel ;
 lc:GPT4o rdf:type owl:NamedIndividual , lc:AIModel ;
          rdfs:label "GPT-4o" ;
          lc:inheritsFrom lc:GPT4 .
+
+###  AIModel hasLineage ModelLineage
+lc:GPT35 lc:hasLineage lc:Lineage_GPT3_to_GPT35 .
+lc:ChatGPT lc:hasLineage lc:Lineage_GPT35_to_ChatGPT .
+lc:GPT4 lc:hasLineage lc:Lineage_GPT35_to_GPT4 .
+lc:GPT4o lc:hasLineage lc:Lineage_GPT4_to_GPT4o .
 
 ###  ExploitationRecord propagates to models
 lc:SamaExploitationRecord lc:propagatesTo lc:GPT35 .

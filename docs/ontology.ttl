@@ -68,9 +68,18 @@
                        rdfs:label "lc:hasExploitationRecord" .
 
 
+###  https://w3id.org/laborchain#hasLineage
+:hasLineage rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :AIModel ;
+            rdfs:range :ModelLineage ;
+            rdfs:label "lc:hasLineage" .
+
+
 ###  https://w3id.org/laborchain#inheritsFrom
 :inheritsFrom rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:TransitiveProperty ;
               rdfs:domain :AIModel ;
               rdfs:range :AIModel ;
               rdfs:label "lc:inheritsFrom" .
@@ -368,6 +377,7 @@
 ###  https://w3id.org/laborchain#ChatGPT
 :ChatGPT rdf:type owl:NamedIndividual ,
                   :AIModel ;
+         :hasLineage :Lineage_GPT35_to_ChatGPT ;
          :inheritsFrom :GPT35 ;
          rdfs:label "ChatGPT" .
 
@@ -395,6 +405,7 @@
 ###  https://w3id.org/laborchain#GPT35
 :GPT35 rdf:type owl:NamedIndividual ,
                 :AIModel ;
+       :hasLineage :Lineage_GPT3_to_GPT35 ;
        :inheritsFrom :GPT3 ;
        :trainedOn :InstructGPT_RLHF ;
        rdfs:label "GPT-3.5" .
@@ -403,6 +414,7 @@
 ###  https://w3id.org/laborchain#GPT4
 :GPT4 rdf:type owl:NamedIndividual ,
                :AIModel ;
+      :hasLineage :Lineage_GPT35_to_GPT4 ;
       :inheritsFrom :GPT35 ;
       rdfs:label "GPT-4" .
 
@@ -410,6 +422,7 @@
 ###  https://w3id.org/laborchain#GPT4o
 :GPT4o rdf:type owl:NamedIndividual ,
                 :AIModel ;
+       :hasLineage :Lineage_GPT4_to_GPT4o ;
        :inheritsFrom :GPT4 ;
        rdfs:label "GPT-4o" .
 

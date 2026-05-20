@@ -61,9 +61,17 @@
 <https://w3id.org/laborchain#hasExploitationRecord> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#ExploitationRecord> .
 <https://w3id.org/laborchain#hasExploitationRecord> <http://www.w3.org/2000/01/rdf-schema#label> "lc:hasExploitationRecord" .
 # 
+# https://w3id.org/laborchain#hasLineage
+<https://w3id.org/laborchain#hasLineage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/laborchain#hasLineage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#hasLineage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#hasLineage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#ModelLineage> .
+<https://w3id.org/laborchain#hasLineage> <http://www.w3.org/2000/01/rdf-schema#label> "lc:hasLineage" .
+# 
 # https://w3id.org/laborchain#inheritsFrom
 <https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
 <https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/laborchain#AIModel> .
 <https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/laborchain#AIModel> .
 <https://w3id.org/laborchain#inheritsFrom> <http://www.w3.org/2000/01/rdf-schema#label> "lc:inheritsFrom" .
@@ -334,6 +342,7 @@
 # https://w3id.org/laborchain#ChatGPT
 <https://w3id.org/laborchain#ChatGPT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/laborchain#ChatGPT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#ChatGPT> <https://w3id.org/laborchain#hasLineage> <https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT> .
 <https://w3id.org/laborchain#ChatGPT> <https://w3id.org/laborchain#inheritsFrom> <https://w3id.org/laborchain#GPT35> .
 <https://w3id.org/laborchain#ChatGPT> <http://www.w3.org/2000/01/rdf-schema#label> "ChatGPT" .
 # 
@@ -357,6 +366,7 @@
 # https://w3id.org/laborchain#GPT35
 <https://w3id.org/laborchain#GPT35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/laborchain#GPT35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#GPT35> <https://w3id.org/laborchain#hasLineage> <https://w3id.org/laborchain#Lineage_GPT3_to_GPT35> .
 <https://w3id.org/laborchain#GPT35> <https://w3id.org/laborchain#inheritsFrom> <https://w3id.org/laborchain#GPT3> .
 <https://w3id.org/laborchain#GPT35> <https://w3id.org/laborchain#trainedOn> <https://w3id.org/laborchain#InstructGPT_RLHF> .
 <https://w3id.org/laborchain#GPT35> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-3.5" .
@@ -364,12 +374,14 @@
 # https://w3id.org/laborchain#GPT4
 <https://w3id.org/laborchain#GPT4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/laborchain#GPT4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#GPT4> <https://w3id.org/laborchain#hasLineage> <https://w3id.org/laborchain#Lineage_GPT35_to_GPT4> .
 <https://w3id.org/laborchain#GPT4> <https://w3id.org/laborchain#inheritsFrom> <https://w3id.org/laborchain#GPT35> .
 <https://w3id.org/laborchain#GPT4> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-4" .
 # 
 # https://w3id.org/laborchain#GPT4o
 <https://w3id.org/laborchain#GPT4o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/laborchain#GPT4o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/laborchain#AIModel> .
+<https://w3id.org/laborchain#GPT4o> <https://w3id.org/laborchain#hasLineage> <https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o> .
 <https://w3id.org/laborchain#GPT4o> <https://w3id.org/laborchain#inheritsFrom> <https://w3id.org/laborchain#GPT4> .
 <https://w3id.org/laborchain#GPT4o> <http://www.w3.org/2000/01/rdf-schema#label> "GPT-4o" .
 # 

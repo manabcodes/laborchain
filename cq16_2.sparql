@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX lc: <https://w3id.org/laborchain#>
+
+SELECT ?model ?depth ?inheritanceType
+WHERE {
+  ?model rdf:type lc:AIModel .
+  ?model lc:hasLineage ?lineage .
+  ?lineage lc:inheritanceDepth ?depth .
+  ?lineage lc:inheritanceType ?inheritanceType .
+  ?lineage lc:exploitationInherited "true"^^xsd:boolean .
+}
+ORDER BY ?depth

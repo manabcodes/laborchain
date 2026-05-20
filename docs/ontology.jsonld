@@ -69,6 +69,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ChatGPT"
   } ],
+  "https://w3id.org/laborchain#hasLineage" : [ {
+    "@id" : "https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT"
+  } ],
   "https://w3id.org/laborchain#inheritsFrom" : [ {
     "@id" : "https://w3id.org/laborchain#GPT35"
   } ]
@@ -164,6 +167,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "GPT-3.5"
   } ],
+  "https://w3id.org/laborchain#hasLineage" : [ {
+    "@id" : "https://w3id.org/laborchain#Lineage_GPT3_to_GPT35"
+  } ],
   "https://w3id.org/laborchain#inheritsFrom" : [ {
     "@id" : "https://w3id.org/laborchain#GPT3"
   } ],
@@ -179,6 +185,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "GPT-4"
   } ],
+  "https://w3id.org/laborchain#hasLineage" : [ {
+    "@id" : "https://w3id.org/laborchain#Lineage_GPT35_to_GPT4"
+  } ],
   "https://w3id.org/laborchain#inheritsFrom" : [ {
     "@id" : "https://w3id.org/laborchain#GPT35"
   } ]
@@ -190,6 +199,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "GPT-4o"
+  } ],
+  "https://w3id.org/laborchain#hasLineage" : [ {
+    "@id" : "https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o"
   } ],
   "https://w3id.org/laborchain#inheritsFrom" : [ {
     "@id" : "https://w3id.org/laborchain#GPT4"
@@ -638,6 +650,21 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
+  "@id" : "https://w3id.org/laborchain#hasLineage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/laborchain#AIModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lc:hasLineage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/laborchain#ModelLineage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
   "@id" : "https://w3id.org/laborchain#inheritanceDepth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -669,7 +696,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/laborchain#inheritsFrom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/laborchain#AIModel"
   } ],

@@ -117,11 +117,24 @@
     
 
 
+    <!-- https://w3id.org/laborchain#hasLineage -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/laborchain#hasLineage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/laborchain#AIModel"/>
+        <rdfs:range rdf:resource="https://w3id.org/laborchain#ModelLineage"/>
+        <rdfs:label>lc:hasLineage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/laborchain#inheritsFrom -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/laborchain#inheritsFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/laborchain#AIModel"/>
         <rdfs:range rdf:resource="https://w3id.org/laborchain#AIModel"/>
         <rdfs:label>lc:inheritsFrom</rdfs:label>
@@ -611,6 +624,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/laborchain#ChatGPT">
         <rdf:type rdf:resource="https://w3id.org/laborchain#AIModel"/>
+        <hasLineage rdf:resource="https://w3id.org/laborchain#Lineage_GPT35_to_ChatGPT"/>
         <inheritsFrom rdf:resource="https://w3id.org/laborchain#GPT35"/>
         <rdfs:label>ChatGPT</rdfs:label>
     </owl:NamedIndividual>
@@ -654,6 +668,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/laborchain#GPT35">
         <rdf:type rdf:resource="https://w3id.org/laborchain#AIModel"/>
+        <hasLineage rdf:resource="https://w3id.org/laborchain#Lineage_GPT3_to_GPT35"/>
         <inheritsFrom rdf:resource="https://w3id.org/laborchain#GPT3"/>
         <trainedOn rdf:resource="https://w3id.org/laborchain#InstructGPT_RLHF"/>
         <rdfs:label>GPT-3.5</rdfs:label>
@@ -666,6 +681,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/laborchain#GPT4">
         <rdf:type rdf:resource="https://w3id.org/laborchain#AIModel"/>
+        <hasLineage rdf:resource="https://w3id.org/laborchain#Lineage_GPT35_to_GPT4"/>
         <inheritsFrom rdf:resource="https://w3id.org/laborchain#GPT35"/>
         <rdfs:label>GPT-4</rdfs:label>
     </owl:NamedIndividual>
@@ -677,6 +693,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/laborchain#GPT4o">
         <rdf:type rdf:resource="https://w3id.org/laborchain#AIModel"/>
+        <hasLineage rdf:resource="https://w3id.org/laborchain#Lineage_GPT4_to_GPT4o"/>
         <inheritsFrom rdf:resource="https://w3id.org/laborchain#GPT4"/>
         <rdfs:label>GPT-4o</rdfs:label>
     </owl:NamedIndividual>
