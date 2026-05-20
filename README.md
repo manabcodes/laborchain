@@ -7,10 +7,8 @@
 > *"Entre los individuos, como entre las naciones, el respeto al derecho ajeno es la paz."*  
 > — Benito Juárez
 
-![The Invisible Labour Behind Content Moderation](https://betterimagesofai.org/images/TheInvisibleLaborBehindContentModeration.jpg)
+![The Invisible Labour Behind Content Moderation](https://betterimagesofai.org/ImagesAI/the-invisible-labor-behind-content-moderation_gloria-mendoza_3000x2000.jpg)
 *The Invisible Labour Behind Content Moderation* — Gloria Mendoza / [Better Images of AI](https://betterimagesofai.org) / [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-
-> This illustration was inspired by Chapter 2 of Karen Hao's *Empire of AI*, which tells the story of a Kenyan man who works as a content moderator and data labeler. Through constant exposure to violent and disturbing material, his mental health gradually deteriorates until he isolates himself from both his family and his community. The collage aims to convey the isolation, distress, and psychological fatigue that many data workers endure. Distortion is the primary visual metaphor: it illustrates the damage that systemic forces inflict on individuals — a once solid subject gradually losing control, becoming increasingly vulnerable and disoriented.
 
 ---
 
