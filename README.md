@@ -104,10 +104,10 @@ The repository includes instance data for two documented cases:
 If you use LaborChain in your research, please cite:
 
 ```
-@inproceedings{anonymous2026laborchain,
+@misc{anonymous2026laborchain,
   author    = {Anonymous},
   title     = {{LaborChain}: An Ontological Framework for Tracing and Documenting Labor Exploitation Provenance in {AI} Training Lineages},
-  booktitle = {Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (AIES 2026)},
+  note 	    = {Submitted to the AAAI/ACM Conference on AI, Ethics, and Society (AIES 2026)},
   year      = {2026}
 }
 ```
